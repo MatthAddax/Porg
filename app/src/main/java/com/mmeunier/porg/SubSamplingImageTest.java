@@ -7,7 +7,9 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.PopupMenu;
 import android.view.GestureDetector;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
@@ -68,6 +70,7 @@ public class SubSamplingImageTest extends AppCompatActivity {
                     if(x > pin.x - (pinWidth/2) && x < pin.x + (pinWidth/2)){
                         if(y > pin.y - (pinHeight/2) && y < pin.y + (pinHeight/2)){
                             Toast.makeText(SubSamplingImageTest.this, String.format("Blablabla pin clicked on (%fl, %fl)", pin.x, pin.y), Toast.LENGTH_LONG).show();
+
                         }
                     }
                 }
@@ -88,5 +91,4 @@ public class SubSamplingImageTest extends AppCompatActivity {
         });
 
     }
-
 }
