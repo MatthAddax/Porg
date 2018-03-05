@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent goToFingerPaintActivity = new Intent(MainActivity.this, SubSamplingImageTest.class);
+        /*Intent goToFingerPaintActivity = new Intent(MainActivity.this, SubSamplingImageTest.class);
         startActivity(goToFingerPaintActivity);
-        finish();
+        finish();*/
 
         while(ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this,
@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 try{
-                                    long test = Long.parseLong(result.getText());
-                                    Toast.makeText(MainActivity.this, test + " " + result.getBarcodeFormat().name(),
+                                    //long test = Long.parseLong(result.getText());
+                                    Toast.makeText(MainActivity.this, result.getText() + " " + result.getBarcodeFormat().name(),
                                         Toast.LENGTH_LONG).show();
                                 }catch(NumberFormatException nfe){
                                     Log.e("BARCODESCANNER", "> Integer exception : " + result.getText());
