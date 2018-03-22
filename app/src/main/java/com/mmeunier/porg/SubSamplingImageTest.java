@@ -38,7 +38,7 @@ public class SubSamplingImageTest extends AppCompatActivity {
         final GestureDetector gestureDetector = new GestureDetector(this, new GestureDetector.SimpleOnGestureListener(){
             @Override
             public void onLongPress(MotionEvent e) {
-                /**
+                /*
                  * Draw pin on touchedPointOnMapCoord coordinates or on relative coordinates??
                  *
                  * */

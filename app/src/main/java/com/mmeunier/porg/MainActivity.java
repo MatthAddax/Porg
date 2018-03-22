@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*Intent goToFingerPaintActivity = new Intent(MainActivity.this, SubSamplingImageTest.class);
+        Intent goToFingerPaintActivity = new Intent(MainActivity.this, PDFSubSampleTest.class);
         startActivity(goToFingerPaintActivity);
-        finish();*/
+        finish();
 
         while(ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this,
